@@ -56,6 +56,9 @@ def recognize():
             if best_score > 0.6:
                 recognized_names.append(best_match_name)
 
+        #to remove the image 
+        os.remove(filepath)
+
         return jsonify({"recognized_faces": list(set(recognized_names))})
 
     except Exception as e:
