@@ -25,8 +25,8 @@ COPY . .
 RUN mkdir -p uploads
 
 # ===== Expose port for Railway =====
-ENV PORT=10000
+# Remove hardcoded port
 EXPOSE $PORT
 
-# ===== Start Flask with Gunicorn, use Railway PORT =====
+# Start Flask / Gunicorn using Railway's dynamic port
 CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:$PORT server:app"]
