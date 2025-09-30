@@ -1,16 +1,40 @@
-deepface==0.0.95
-tensorflow==2.12.0
-# tf-keras==2.12.0
-retinaface==1.1.1
+deepface
+tensorflow>=2.12,<2.13
 
-opencv-python==4.10.0.84
-numpy==1.26.4
-pandas==2.2.2
-scikit-learn==1.5.1
+# tf-keras not needed
+retinaface
 
-flask==3.0.3
-flask-cors>=4.0.1
-requests==2.32.3
+opencv-python
+numpy>=1.22,<1.24
+pandas
+scikit-learn
+
+flask
+flask-cors
+requests
 
 # Firebase support
-firebase-admin==6.5.0
+firebase-admin
+
+
+
+
+
+
+# deepface==0.0.95
+# tensorflow>=2.12,<2.13
+
+# # tf-keras not needed
+# retinaface==1.1.1
+
+# opencv-python==4.10.0.84
+# numpy>=1.22,<1.24
+# pandas==2.2.2
+# scikit-learn==1.5.1
+
+# flask==3.0.3
+# flask-cors>=4.0.1
+# requests==2.32.3
+
+# # Firebase support
+# firebase-admin==6.5.0
