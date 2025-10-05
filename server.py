@@ -67,6 +67,10 @@ def recognize():
 @app.route("/ping")
 def ping():
     return "API is live!"
+@app.route("/")
+def home():
+    return "Welcome to the Face Detection API!"
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
